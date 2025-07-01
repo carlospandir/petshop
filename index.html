@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop Loja Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>PetShop - Loja</h1>
+
+  <nav>
+    <button onclick="mostrarProdutos('cachorros')">Cachorros</button>
+    <button onclick="mostrarProdutos('gatos')">Gatos</button>
+    <button onclick="mostrarProdutos('outros')">Outros</button>
+    <button onclick="mostrarProdutos('todos')">Todos</button>
+  </nav>
+
+  <section id="produtos-lista"></section>
+
+  <div id="carrinho-container">
+    <button id="carrinho-btn">
+      🛒(<span id="carrinho-contador">0</span>)
+    </button>
+    <div id="carrinho-popup" class="escondido">
+      <h3>Itens no Carrinho</h3>
+      <ul id="carrinho-lista"></ul>
+      <p id="carrinho-total">Total: R$ 0,00</p>
+      <button onclick="finalizarCompra()" id="finalizarCompra">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
