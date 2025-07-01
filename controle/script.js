@@ -8,7 +8,7 @@ function carregarProdutos() {
     renderizarEstoque();
   } else {
     // Se não, carregar do JSON original e criar estoque padrão
-    fetch('produtos.json')
+    fetch('../loja/produtos.json')
       .then(response => response.json())
       .then(data => {
         produtos = data;
